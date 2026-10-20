@@ -277,7 +277,8 @@
         "pad": 0
       }
     },
-    "var_length": 60
+    "min_length": 1,
+    "max_length": 60
   },
   "pf_vectors": {
     "var_names": [
@@ -320,7 +321,8 @@
         "pad": 0
       }
     },
-    "var_length": 60
+    "min_length": 1,
+    "max_length": 60
   },
   "pf_mask": {
     "var_names": [
@@ -336,7 +338,8 @@
         "pad": 0
       }
     },
-    "var_length": 60
+    "min_length": 1,
+    "max_length": 60
   },
   "lt_features": {
     "var_names": [
@@ -568,7 +571,8 @@
         "pad": 0
       }
     },
-    "var_length": 6
+    "min_length": 1,
+    "max_length": 6
   },
   "lt_vectors": {
     "var_names": [
@@ -611,7 +615,8 @@
         "pad": 0
       }
     },
-    "var_length": 6
+    "min_length": 1,
+    "max_length": 6
   },
   "lt_mask": {
     "var_names": [
@@ -627,7 +632,8 @@
         "pad": 0
       }
     },
-    "var_length": 6
+    "min_length": 1,
+    "max_length": 6
   },
   "sv_features": {
     "var_names": [
@@ -760,7 +766,8 @@
         "pad": 0
       }
     },
-    "var_length": 6
+    "min_length": 1,
+    "max_length": 6
   },
   "sv_vectors": {
     "var_names": [
@@ -803,7 +810,8 @@
         "pad": 0
       }
     },
-    "var_length": 6
+    "min_length": 1,
+    "max_length": 6
   },
   "sv_mask": {
     "var_names": [
@@ -819,7 +827,8 @@
         "pad": 0
       }
     },
-    "var_length": 6
+    "min_length": 1,
+    "max_length": 6
   },
   "lepton_features": {
     "var_names": [
@@ -1051,7 +1060,8 @@
         "pad": 0
       }
     },
-    "var_length": 1
+    "min_length": 1,
+    "max_length": 1
   },
   "lepton_vectors": {
     "var_names": [
@@ -1094,7 +1104,8 @@
         "pad": 0
       }
     },
-    "var_length": 1
+    "min_length": 1,
+    "max_length": 1
   },
   "lepton_mask": {
     "var_names": [
@@ -1110,6 +1121,7 @@
         "pad": 0
       }
     },
-    "var_length": 1
+    "min_length": 1,
+    "max_length": 1
   }
 }
