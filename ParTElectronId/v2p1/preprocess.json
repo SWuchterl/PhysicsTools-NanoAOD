@@ -1,0 +1,1127 @@
+{
+  "output_names": [
+    "prompt",
+    "tau",
+    "heavy",
+    "light",
+    "fake"
+  ],
+  "input_names": [
+    "pf_features",
+    "pf_vectors",
+    "pf_mask",
+    "lt_features",
+    "lt_vectors",
+    "lt_mask",
+    "sv_features",
+    "sv_vectors",
+    "sv_mask",
+    "lepton_features",
+    "lepton_vectors",
+    "lepton_mask"
+  ],
+  "pf_features": {
+    "var_names": [
+      "PF_pt_log",
+      "PF_energy_glob_log",
+      "PF_charge",
+      "PF_isElectron",
+      "PF_isMuon",
+      "PF_isNeutralHadron",
+      "PF_isPhoton",
+      "PF_isChargedHadron",
+      "PF_fromPV",
+      "PF_puppiWeightNoLep",
+      "PF_dz_asinh",
+      "PF_dzsig_asinh",
+      "PF_dxy_asinh",
+      "PF_dxysig_asinh",
+      "PF_caloFraction",
+      "PF_hcalFraction",
+      "PF_lostInnerHits",
+      "PF_numberOfPixelHits",
+      "PF_trackerLayersWithMeasurement",
+      "PF_qoverp",
+      "PF_qdotp",
+      "PF_ass",
+      "PF_chi2",
+      "PF_quality",
+      "PF_phi_rel",
+      "PF_eta_rel",
+      "PF_dR_lep",
+      "PF_pt_rel_log"
+    ],
+    "var_infos": {
+      "PF_pt_log": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_energy_glob_log": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_charge": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_isElectron": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_isMuon": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_isNeutralHadron": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_isPhoton": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_isChargedHadron": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_fromPV": {
+        "median": 2,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_puppiWeightNoLep": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_dz_asinh": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_dzsig_asinh": {
+        "median": 0,
+        "norm_factor": 0.15,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_dxy_asinh": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_dxysig_asinh": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_caloFraction": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": 0,
+        "upper_bound": 3,
+        "pad": 0
+      },
+      "PF_hcalFraction": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": 0,
+        "upper_bound": 3,
+        "pad": 0
+      },
+      "PF_lostInnerHits": {
+        "median": 0,
+        "norm_factor": 0.25,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_numberOfPixelHits": {
+        "median": 0,
+        "norm_factor": 0.15,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_trackerLayersWithMeasurement": {
+        "median": 0,
+        "norm_factor": 0.05,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_qoverp": {
+        "median": 0.0,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_qdotp": {
+        "median": 0,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -25,
+        "upper_bound": 25,
+        "pad": 0
+      },
+      "PF_ass": {
+        "median": 4,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_chi2": {
+        "median": 1,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_quality": {
+        "median": 0,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_phi_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_eta_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_dR_lep": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_pt_rel_log": {
+        "median": -4,
+        "norm_factor": 0.25,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 60
+  },
+  "pf_vectors": {
+    "var_names": [
+      "PF_px_glob",
+      "PF_py_glob",
+      "PF_pz_glob",
+      "PF_energy_glob"
+    ],
+    "var_infos": {
+      "PF_px_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_py_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_pz_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_energy_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 60
+  },
+  "pf_mask": {
+    "var_names": [
+      "PF_mask"
+    ],
+    "var_infos": {
+      "PF_mask": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 60
+  },
+  "lt_features": {
+    "var_names": [
+      "LT_pt_log",
+      "LT_energy_glob_log",
+      "LT_charge",
+      "LT_isElectron",
+      "LT_isMuon",
+      "LT_isNeutralHadron",
+      "LT_isPhoton",
+      "LT_isChargedHadron",
+      "LT_fromPV",
+      "LT_dz_asinh",
+      "LT_dzsig_asinh",
+      "LT_dxy_asinh",
+      "LT_dxysig_asinh",
+      "LT_lostInnerHits",
+      "LT_numberOfPixelHits",
+      "LT_trackerLayersWithMeasurement",
+      "LT_qoverp",
+      "LT_qdotp",
+      "LT_ass",
+      "LT_chi2",
+      "LT_quality",
+      "LT_phi_rel",
+      "LT_eta_rel",
+      "LT_dR_lep",
+      "LT_pt_rel_log"
+    ],
+    "var_infos": {
+      "LT_pt_log": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_energy_glob_log": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_charge": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_isElectron": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_isMuon": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_isNeutralHadron": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_isPhoton": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_isChargedHadron": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_fromPV": {
+        "median": 2,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_dz_asinh": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_dzsig_asinh": {
+        "median": 0,
+        "norm_factor": 0.15,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_dxy_asinh": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_dxysig_asinh": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_lostInnerHits": {
+        "median": 0,
+        "norm_factor": 0.25,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_numberOfPixelHits": {
+        "median": 0,
+        "norm_factor": 0.15,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_trackerLayersWithMeasurement": {
+        "median": 0,
+        "norm_factor": 0.05,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_qoverp": {
+        "median": 0.0,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_qdotp": {
+        "median": 0,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -25,
+        "upper_bound": 25,
+        "pad": 0
+      },
+      "LT_ass": {
+        "median": 4,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_chi2": {
+        "median": 1,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_quality": {
+        "median": 0,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "LT_phi_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_eta_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_dR_lep": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_pt_rel_log": {
+        "median": -4,
+        "norm_factor": 0.25,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 6
+  },
+  "lt_vectors": {
+    "var_names": [
+      "LT_px_glob",
+      "LT_py_glob",
+      "LT_pz_glob",
+      "LT_energy_glob"
+    ],
+    "var_infos": {
+      "LT_px_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_py_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_pz_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "LT_energy_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 6
+  },
+  "lt_mask": {
+    "var_names": [
+      "LT_mask"
+    ],
+    "var_infos": {
+      "LT_mask": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 6
+  },
+  "sv_features": {
+    "var_names": [
+      "SV_pt_log",
+      "SV_energy_glob_log",
+      "SV_mass_log",
+      "SV_d3d_asinh",
+      "SV_d3dsig_asinh",
+      "SV_dxy_asinh",
+      "SV_dxysig_asinh",
+      "SV_ndof",
+      "SV_chi2",
+      "SV_cospAngle",
+      "SV_nTracks",
+      "SV_eta_rel",
+      "SV_phi_rel",
+      "SV_chi2norm"
+    ],
+    "var_infos": {
+      "SV_pt_log": {
+        "median": 3,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_energy_glob_log": {
+        "median": 3,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_mass_log": {
+        "median": 0.5,
+        "norm_factor": 0.3,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_d3d_asinh": {
+        "median": 0,
+        "norm_factor": 0.15,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_d3dsig_asinh": {
+        "median": 3,
+        "norm_factor": 0.15,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_dxy_asinh": {
+        "median": 0,
+        "norm_factor": 0.15,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_dxysig_asinh": {
+        "median": 2,
+        "norm_factor": 0.15,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_ndof": {
+        "median": 2,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_chi2": {
+        "median": 2,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_cospAngle": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "SV_nTracks": {
+        "median": 3,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_eta_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "SV_phi_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "SV_chi2norm": {
+        "median": 1,
+        "norm_factor": 0.25,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 6
+  },
+  "sv_vectors": {
+    "var_names": [
+      "SV_px_glob",
+      "SV_py_glob",
+      "SV_pz_glob",
+      "SV_energy_glob"
+    ],
+    "var_infos": {
+      "SV_px_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "SV_py_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "SV_pz_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "SV_energy_glob": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 6
+  },
+  "sv_mask": {
+    "var_names": [
+      "SV_mask"
+    ],
+    "var_infos": {
+      "SV_mask": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 6
+  },
+  "lepton_features": {
+    "var_names": [
+      "Lepton_pt_log",
+      "Lepton_energy_log",
+      "Lepton_eta",
+      "Lepton_dxy_asinh",
+      "Lepton_dxy_sig_asinh",
+      "Lepton_dz_asinh",
+      "Lepton_dz_sig_asinh",
+      "Lepton_sip3d_asinh",
+      "Lepton_sip3d_sig_asinh",
+      "Lepton_jetPtRatio",
+      "Lepton_jetNDauChargedMVASel",
+      "Lepton_passConversionVeto",
+      "Lepton_eoverp_log",
+      "Lepton_fbrem_log",
+      "Lepton_dr03HcalDepth1TowerSumEt_Rel",
+      "Lepton_supcl_phiWidth",
+      "Lepton_supcl_etaWidth",
+      "Lepton_sigmaiphiiphi",
+      "Lepton_sigmaietaieta",
+      "Lepton_e1x5bye5x5",
+      "Lepton_r9full",
+      "Lepton_hcaloverecal_log",
+      "Lepton_dEtaInSeed",
+      "Lepton_deltaetacltrkcalo",
+      "Lepton_closeTrackNLayers"
+    ],
+    "var_infos": {
+      "Lepton_pt_log": {
+        "median": 3,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_energy_log": {
+        "median": 4,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_eta": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_dxy_asinh": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_dxy_sig_asinh": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_dz_asinh": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_dz_sig_asinh": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_sip3d_asinh": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_sip3d_sig_asinh": {
+        "median": 0,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_jetPtRatio": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_jetNDauChargedMVASel": {
+        "median": 2,
+        "norm_factor": 0.5,
+        "replace_inf_value": 0,
+        "lower_bound": -10,
+        "upper_bound": 10,
+        "pad": 0
+      },
+      "Lepton_passConversionVeto": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_eoverp_log": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_fbrem_log": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_dr03HcalDepth1TowerSumEt_Rel": {
+        "median": 0.0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": 0,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_supcl_phiWidth": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_supcl_etaWidth": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_sigmaiphiiphi": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_sigmaietaieta": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_e1x5bye5x5": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_r9full": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_hcaloverecal_log": {
+        "median": -7,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_dEtaInSeed": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_deltaetacltrkcalo": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_closeTrackNLayers": {
+        "median": 10,
+        "norm_factor": 0.1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 1
+  },
+  "lepton_vectors": {
+    "var_names": [
+      "Lepton_px",
+      "Lepton_py",
+      "Lepton_pz",
+      "Lepton_energy"
+    ],
+    "var_infos": {
+      "Lepton_px": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_py": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_pz": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "Lepton_energy": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 1
+  },
+  "lepton_mask": {
+    "var_names": [
+      "Lepton_mask"
+    ],
+    "var_infos": {
+      "Lepton_mask": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "min_length": 1,
+    "max_length": 1
+  }
+}
